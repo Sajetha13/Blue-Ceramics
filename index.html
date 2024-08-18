@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Ceramics</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            background:linear-gradient(#fff,#f3e9e8);
+        }
+        /* header {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 50px 100px 100px 100px;
+            background-color: #e8e9e4;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+        } 
+
+        .content h1{
+            color: #6c8bb7;
+            font-size: 60px;
+        }
+
+        .content h3{
+            color: #9ab4c4;
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 5px;
+        }
+
+        .btn{
+            text-decoration: none;
+            align-items: center;
+            padding: 5px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(270deg,#9EBAF3, #353A5F);
+        }
+        .image img{
+            max-width: 450px;
+            height: auto;
+        } */
+
+        header {
+            position: relative;
+            padding: 50px 100px 100px 100px;
+            background-color: #e8e9e4;
+            border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px;
+            overflow: hidden; /* To ensure rounded corners are visible */
+        }
+        .content {
+            display: inline-block;
+            vertical-align: middle;
+            max-width: 50%;
+        }
+        .content h1 {
+            color: #6c8bb7;
+            font-size: 60px;
+            margin: 0;
+        }
+        .content h3 {
+            color: #9ab4c4;
+            background-color: #fff;
+            border-radius: 50px;
+            padding: 20px;
+            margin: 10px 0;
+            display: inline-block;
+            white-space: pre-line;
+        }
+        .btn {
+            text-decoration: none;
+            padding: 5px 30px;
+            font-size: 16px;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(270deg, #9EBAF3, #353A5F);
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .image {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 50%;
+            margin-left: 400px;
+            text-align: right; 
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /*for section*/
+        .first-back{
+            background-color: #fbf8f8;
+        }
+        .back{
+            background-color: #f1e8e8;
+        }
+
+        section h2{
+            font-size: 45px;
+            color: #175479;
+        }
+
+        .row1 .row2{
+            width: 100%;
+        }
+        
+        .row1 .p{
+            display: inline-block;
+            background-color: #f1e8e8;
+        }
+        .row2 .p{
+            display: inline-block;
+            background-color: #f1e8e8;
+        }
+        .p{
+            display: inline;
+            width: 24.5%;
+            text-align: center;
+        }
+
+        .p img{
+            width: 350px;
+            height: 350px;
+        }
+
+        /*for contact page*/
+        .contact{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: linear-gradient(#F3E9E8, #96B9D9);
+        }
+
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+
+        .left-title h2{
+            font-weight: 600;
+            color: #383e69d4;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+
+        .left-title hr{
+            border: none;
+            width: 220px;
+            height: 5px;;
+            background-color: #353a5fd6;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .input{
+            width: 400px;
+            height: 50px;
+            border: none;
+            border-radius: 50px;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            color: #666;
+        }
+
+        .left textarea{
+            height: 140px !important;
+            padding-top: 15px;
+            border-radius: 25px;
+        }
+
+        .input:focus{
+            border: 2px solid #353A5F;
+        }
+
+        .input::placeholder{
+            color: gray;
+        }
+        .left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fff;
+            gap: 10px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: linear-gradient(270deg,#9EBAF3, #353A5F);
+        }
+
+        .right img{
+            width: 500px;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <header>
+        <div class="content">
+            <h1>Blue Ceramics</h1>
+            <h3>Crafting exquisite, handcrafted blue ceramics<br> that bring elegance and timeless beauty to any space.</h3>
+            <br>
+            <a href="http://" class="btn">Explore</a>
+        </div>
+        <div class="image">
+            <img src="images/Japansk_tallerken_med_blå_kat___5_forskellige_slags___16_cm_-_Variant_1-removebg-preview.png" alt="">
+        </div>
+    </header>
+
+    <section>
+        <div class="first-back">
+            <h2>Productos</h2>
+            <h3>Catalogue</h3>
+        </div>
+        <div class="back">
+            <div class="row1">
+                <div class="p">
+                    <img src="images/Coastal Mug - Sailing Boats.jpeg" alt="">
+                    <p>Coastel Mug</p>
+                </div>
+                <div class="p">
+                    <img src="images/download (6).jpeg" alt="">
+                    <p>Coastel Mug</p>
+                 </div>
+                <div class="p">
+                    <img src="images/Floral Coffee Mug, Handmade Large Mug, Blue Flower Ceramic Mug - Etsy.jpeg" alt="">
+                    <p>Coastel Mug</p>
+                </div>
+                <div class="p">
+                    <img src="images/Blue Waves Coffee Mug - Abstract Ceramic Cup, Handmade Ceramic Coffee Mug.jpeg" alt="">
+                    <p>Coastel Mug</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row2">
+                <div class="p">
+                    <img src="images/Large bowl for breakfast _ White and blue enamelled stoneware.jpeg" alt="">
+                    <p>Coastel Mug</p>
+                </div>
+                <div class="p">
+                    <img src="images/vase.jpeg" alt="">
+                    <p>Coastel Mug</p>
+                 </div>
+                <div class="p">
+                    <img src="images/download (7).jpeg" alt="">
+                    <p>Coastel Mug</p>
+                </div>
+                <div class="p">
+                    <img src="images/Floral Seashell Jewelry Dish.jpeg" alt="">
+                    <p>Coastel Mug</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact">
+        <form action="" class="left">
+            <div class="left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Name" class="input" required>
+            <input type="email" name="email" placeholder="Email" class="input" required>
+            <textarea name="message" placeholder="Message" class="input" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="right">
+            <img src="images/Large_White_and_Blue_Ceramic_Platter___Ceramic_Dinnerware_Set_Serving_Tray_Hand_Sculpted_Art_Modern_Tableware_Pottery-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        © 2024 Blue Ceramics. All rights reserved. 
+    </footer>
+</body>
+</html>
