@@ -7,49 +7,11 @@
         *{
             margin: 0;
             padding: 0;
-
+            box-sizing: border-box;
         }
         body{
             background:linear-gradient(#fff,#f3e9e8);
         }
-        /* header {
-            display: flex;
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 50px 100px 100px 100px;
-            background-color: #e8e9e4;
-            border-bottom-left-radius: 70px;
-            border-bottom-right-radius: 70px;
-        } 
-
-        .content h1{
-            color: #6c8bb7;
-            font-size: 60px;
-        }
-
-        .content h3{
-            color: #9ab4c4;
-            background-color: #fff;
-            border-radius: 50px;
-            padding: 5px;
-        }
-
-        .btn{
-            text-decoration: none;
-            align-items: center;
-            padding: 5px 30px;
-            font-size: 16px;
-            color: #fff;
-            gap: 10px;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            background: linear-gradient(270deg,#9EBAF3, #353A5F);
-        }
-        .image img{
-            max-width: 450px;
-            height: auto;
-        } */
 
         header {
             position: relative;
@@ -57,7 +19,7 @@
             background-color: #e8e9e4;
             border-bottom-left-radius: 70px;
             border-bottom-right-radius: 70px;
-            overflow: hidden; /* To ensure rounded corners are visible */
+            overflow: hidden; 
         }
         .content {
             display: inline-block;
@@ -147,38 +109,43 @@
         }
 
         /*for contact page*/
-        .contact{
+        .contact {
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+            text-align: center;
             background: linear-gradient(#F3E9E8, #96B9D9);
+            padding-top: 50px;
         }
 
-        .left{
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            gap: 20px;
+        .left {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            margin-right: 10%;
         }
 
-        .left-title h2{
+        .right {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .left-title h2 {
             font-weight: 600;
             color: #383e69d4;
             font-size: 40px;
             margin-bottom: 5px;
         }
 
-        .left-title hr{
+        .left-title hr {
             border: none;
             width: 220px;
-            height: 5px;;
+            height: 5px;
             background-color: #353a5fd6;
             border-radius: 10px;
             margin-bottom: 20px;
         }
 
-        .input{
+        .input {
+            display: block;
             width: 400px;
             height: 50px;
             border: none;
@@ -187,24 +154,28 @@
             padding-left: 25px;
             font-weight: 500;
             color: #666;
+            margin-bottom: 20px;
         }
 
-        .left textarea{
+        .left textarea {
+            display: block;
+            width: 400px;
             height: 140px !important;
             padding-top: 15px;
             border-radius: 25px;
+            margin-bottom: 20px;
         }
 
-        .input:focus{
+        .input:focus {
             border: 2px solid #353A5F;
         }
 
-        .input::placeholder{
+        .input::placeholder {
             color: gray;
         }
-        .left button{
-            display: flex;
-            align-items: center;
+
+        .left button {
+            display: inline-block;
             padding: 15px 30px;
             font-size: 16px;
             color: #fff;
@@ -212,12 +183,16 @@
             border: none;
             border-radius: 50px;
             cursor: pointer;
-            background: linear-gradient(270deg,#9EBAF3, #353A5F);
+            background: linear-gradient(270deg, #9EBAF3, #353A5F);
+            margin-top: 10px;
+        }
+        .right img {
+            display: block;
+            width: 500px;
+            margin: 0 auto;
         }
 
-        .right img{
-            width: 500px;
-        }
+
         footer{
             text-align: center;
         }
